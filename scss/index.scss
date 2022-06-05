@@ -172,11 +172,11 @@ img {
     gap: 8px;
     font-size: 18px;
     font-weight: $font-bold;
-    color: $black-color;
+    color: $white-color;
 
     &-icon {
       width: 35px;
-      color: $blue-color;
+      color: $white-color;
     }
   }
 
@@ -226,7 +226,7 @@ img {
   &__toggle {
     display: inline-flex;
     font-size: 1.5rem;
-    color: $black-color;
+    color: $white-color;
     cursor: pointer;
   }
 
@@ -234,5 +234,60 @@ img {
   .show-menu {
     opacity: 1;
     transform: scaleY(1);
+  }
+}
+
+// ===== HOME SECTION =====
+.home {
+  position: relative;
+  background-color: $blue-color;
+  z-index: $z-normal;
+
+  &__bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: $z-back;
+  }
+
+  &__container {
+    z-index: $z-normal;
+  }
+
+  &__data,
+  &__img {
+    justify-self: center;
+  }
+
+  &__title,
+  &__text,
+  &__tag {
+    color: $white-color;
+  }
+
+  &__buttons {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: $margin-1;
+
+    &-video {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 15px;
+      font-weight: $font-medium;
+      color: $white-color;
+    }
+
+    &-play {
+      display: inline-flex;
+      font-size: 1.5rem;
+      color: $white-color;
+    }
+  }
+
+  &__tag {
+    font-size: 13px;
   }
 }
