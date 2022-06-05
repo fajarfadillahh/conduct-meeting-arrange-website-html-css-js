@@ -402,3 +402,51 @@ img {
     }
   }
 }
+
+// ===== CALLBACK SECTION =====
+.callback {
+  &__container {
+    gap: 1rem;
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: $margin-1;
+
+    &-sign {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 1rem 2rem;
+      border: 1.5px solid rgba($color: #6c757d, $alpha: 0.6);
+      border-radius: 1rem;
+      font-size: 15px;
+      font-weight: $font-medium;
+      color: $grey-color;
+      transition: $transion-400;
+
+      &:hover {
+        background-color: $black-color;
+        color: $white-color;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 15px;
+    font-weight: $font-medium;
+    color: $grey-color;
+    text-align: center;
+    text-decoration: underline;
+
+    &:hover {
+      color: $black-color;
+    }
+  }
+}
