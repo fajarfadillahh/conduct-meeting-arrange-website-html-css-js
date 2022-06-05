@@ -85,7 +85,7 @@ img {
   padding: 8rem 0 4rem;
 
   &-title {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: $font-bold;
     color: $black-color;
     line-height: $leading-title;
@@ -307,5 +307,20 @@ img {
 
   &__tag {
     font-size: 13px;
+  }
+}
+
+// ===== FEATURE SECTION =====
+.feature {
+  padding-top: 12rem;
+
+  &__group {
+    display: grid;
+    gap: 5rem;
+  }
+
+  &__content-data,
+  &__content-img {
+    justify-self: center;
   }
 }
