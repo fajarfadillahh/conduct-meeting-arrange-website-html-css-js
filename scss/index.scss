@@ -58,7 +58,7 @@ html {
 
 body {
   font-family: $font-body;
-  font-weight: $font-medium;
+  font-weight: $font-reguler;
 }
 
 ul,
@@ -147,4 +147,92 @@ img {
 
 .main {
   overflow: hidden;
+}
+
+// ===== HEADER SECTION =====
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: $z-fixed;
+  transition: $transion-400;
+
+  &__container {
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: $font-bold;
+    color: $black-color;
+
+    &-icon {
+      width: 35px;
+      color: $blue-color;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &__menu {
+      position: fixed;
+      width: 80%;
+      top: 7rem;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: center;
+      background-color: $white-color;
+      box-shadow: 0 0 12px rgba($color: #000000, $alpha: 0.1);
+      border-radius: 2rem;
+      transition: $transion-400;
+      opacity: 0;
+      transform: scaleY(0);
+      transform-origin: 0% 0%;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__link {
+    font-size: 15px;
+    color: $grey-color;
+
+    &.active-link {
+      font-weight: $font-medium;
+      color: $blue-color;
+    }
+  }
+
+  &__button {
+    display: flex;
+    background-color: $blue-color;
+    color: $white-color;
+    margin-top: $margin-1-5;
+  }
+
+  &__toggle {
+    display: inline-flex;
+    font-size: 1.5rem;
+    color: $black-color;
+    cursor: pointer;
+  }
+
+  // show menu
+  .show-menu {
+    opacity: 1;
+    transform: scaleY(1);
+  }
 }
