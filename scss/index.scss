@@ -1,0 +1,150 @@
+// ===== FONT GOOGLE =====
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap");
+
+// ===== VARIABLES SCSS =====
+// header height
+$header-height: 6rem;
+
+// color palette
+$black-color: #212529;
+$grey-color: #6c757d;
+$white-color: #ffffff;
+$blue-color: #4e7cff;
+$darkblue-color: #131e40;
+
+// font body
+$font-body: "Poppins", sans-serif;
+
+// font weight
+$font-reguler: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extrabold: 900;
+
+// margin
+$margin-0-5: 0.5rem;
+$margin-1: 1rem;
+$margin-1-5: 1.5rem;
+$margin-2: 2rem;
+$margin-2-5: 2.5rem;
+$margin-3: 3rem;
+$margin-3-5: 3.5rem;
+$margin-4: 4rem;
+
+// z-index
+$z-back: -10;
+$z-normal: 1;
+$z-tooltip: 10;
+$z-fixed: 100;
+
+// line-height
+$leading-title: 150%;
+$leading-text: 180%;
+
+// transtion time
+$transion-400: 0.4s;
+
+// ===== RESET & BASE =====
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-body;
+  font-weight: $font-medium;
+}
+
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+input,
+button {
+  font-family: $font-body;
+  font-weight: $font-medium;
+  outline: none;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// ===== REUSABLE CSS CLASS =====
+.section {
+  padding: 8rem 0 4rem;
+
+  &-title {
+    font-size: 26px;
+    font-weight: $font-bold;
+    color: $black-color;
+    line-height: $leading-title;
+    margin-bottom: $margin-1;
+  }
+
+  &-text {
+    font-size: 15px;
+    color: $grey-color;
+    line-height: $leading-text;
+    margin-bottom: $margin-2;
+  }
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: $font-medium;
+
+  &-fill {
+    padding: 1rem 2rem;
+    background-color: $white-color;
+    border-radius: 1rem;
+    color: $black-color;
+  }
+
+  &-link {
+    gap: 8px;
+    color: $blue-color;
+
+    &:hover .button-icon {
+      transform: translateX(4px);
+    }
+  }
+
+  &-icon {
+    display: inline-flex;
+    font-size: 1.2rem;
+    color: $blue-color;
+    transition: $transion-400;
+  }
+}
+
+.container {
+  max-width: 1120px;
+  width: calc(100% - 3rem);
+  margin: 0 $margin-1-5;
+}
+
+.grid {
+  display: grid;
+
+  &-gap {
+    gap: 3rem;
+  }
+}
+
+.main {
+  overflow: hidden;
+}
