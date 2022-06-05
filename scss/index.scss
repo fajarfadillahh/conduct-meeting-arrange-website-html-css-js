@@ -324,3 +324,81 @@ img {
     justify-self: center;
   }
 }
+
+// ===== TESTIMONIAL SECTION =====
+.testimonial {
+  &__wrapper {
+    padding: 4rem 0;
+    background-color: $blue-color;
+  }
+
+  &__title {
+    text-align: center;
+    color: $white-color;
+  }
+
+  &__content {
+    padding: 3rem 2rem;
+    background-color: $white-color;
+    border-radius: 2rem;
+    transition: $transion-400;
+
+    &-comment {
+      font-size: 15px;
+      color: $black-color;
+      line-height: $leading-text;
+    }
+
+    &-profile {
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    &-img {
+      width: 65px;
+    }
+
+    &-name {
+      font-size: 18px;
+      font-weight: $font-bold;
+      color: $black-color;
+      margin-bottom: $margin-0-5;
+    }
+
+    &-profession {
+      font-size: 15px;
+      color: $grey-color;
+    }
+
+    &.swiper-slide-active {
+      box-shadow: -10px 10px 0 rgba($color: #a3bafb, $alpha: 1);
+    }
+  }
+
+  .swiper-wrapper {
+    padding: 3rem 0;
+  }
+
+  &__container {
+    overflow: hidden;
+
+    & .swiper-pagination {
+      position: initial;
+    }
+
+    & .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background-color: rgba($color: #ffffff, $alpha: 0.8);
+      transition: $transion-400;
+    }
+
+    & .swiper-pagination-bullet-active {
+      width: 2rem;
+      height: 10px;
+      background-color: rgba($color: #ffffff, $alpha: 1);
+      border-radius: 5rem;
+    }
+  }
+}
