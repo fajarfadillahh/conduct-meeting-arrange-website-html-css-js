@@ -571,6 +571,12 @@ img {
   }
 }
 
+// ===== ::SELECTION =====
+::selection {
+  background-color: rgba($color: #a3bafb, $alpha: 1);
+  color: $black-color;
+}
+
 // ===== MEDIA QUERIES =====
 // width 480px
 @media screen and (min-width: 480px) {
