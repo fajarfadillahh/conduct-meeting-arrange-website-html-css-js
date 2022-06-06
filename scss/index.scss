@@ -711,3 +711,14 @@ img {
     align-items: center;
   }
 }
+
+// width 1120px
+@media screen and (min-width: 1120px) {
+  .home__title {
+    font-size: 46px;
+  }
+
+  .footer__content {
+    justify-self: center;
+  }
+}
