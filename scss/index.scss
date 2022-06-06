@@ -541,3 +541,24 @@ img {
     }
   }
 }
+
+// ===== MEDIA QUERIES =====
+// width 480px
+@media screen and (min-width: 480px) {
+  .home__data,
+  .home__img,
+  .feature__content-data,
+  .feature__content-img {
+    width: 400px;
+    justify-self: center;
+  }
+
+  .home__title {
+    font-size: 28px;
+  }
+
+  .callback__container {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
