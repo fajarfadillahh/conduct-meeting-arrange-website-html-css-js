@@ -562,3 +562,21 @@ img {
     margin: 0 auto;
   }
 }
+
+// width 640px
+@media screen and (min-width: 640px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .home__data,
+  .home__img,
+  .feature__content-data,
+  .feature__content-img {
+    width: 480px;
+  }
+
+  .home__title {
+    font-size: 36px;
+  }
+}
