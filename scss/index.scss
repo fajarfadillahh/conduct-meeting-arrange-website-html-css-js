@@ -580,3 +580,51 @@ img {
     font-size: 36px;
   }
 }
+
+// width 767px
+@media screen and (min-width: 767px) {
+  .header {
+    &__menu {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    &__list {
+      flex-direction: row;
+    }
+
+    &__link,
+    & .active-link {
+      color: $white-color;
+      transition: $transion-400;
+    }
+
+    &__button {
+      background-color: $white-color;
+      color: $black-color;
+      transition: $transion-400;
+      margin-top: 0;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    // sticky header
+    &.sticky-header {
+      & .header__link {
+        color: $grey-color;
+      }
+
+      & .header__link.active-link {
+        color: $blue-color;
+      }
+
+      & .header__button {
+        background-color: $blue-color;
+        color: $white-color;
+      }
+    }
+  }
+}
